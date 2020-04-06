@@ -1,8 +1,6 @@
 package rocks.zipcode.io.quiz4.generics;
 
-import java.util.Arrays;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 /**
  * @author leon on 11/12/2018.
@@ -10,7 +8,7 @@ import java.util.TreeSet;
  */
 public class GenericUtils {
     public static <T extends Comparable> Iterable<? extends Iterable<T>> powerSet(Set<T> originalSet) {
-        return null;
+    return (Iterable<? extends Iterable<T>>) originalSet;
     }
 
     public static <T extends Comparable> Iterable<? extends Iterable<T>> powerSet(T... originalSet) {

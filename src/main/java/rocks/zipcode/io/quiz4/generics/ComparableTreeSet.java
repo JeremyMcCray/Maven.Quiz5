@@ -1,9 +1,6 @@
 package rocks.zipcode.io.quiz4.generics;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.TreeSet;
+import java.util.*;
 
 /**
  * @author leon on 11/12/2018.
@@ -22,6 +19,13 @@ public class    ComparableTreeSet<T> extends TreeSet<T> implements Comparable<T>
     }
 
     public int compareTo(ComparableTreeSet<T> o) {
+        List<T> listt =  Arrays.asList(this.list);
+        for (int i = 0; i < listt.size() ; i++) {
+            if(listt.containsAll(Arrays.asList(o.list))){
+                return 0;
+            }
+        }
+
         return Integer.valueOf(null);
     }
 
@@ -29,13 +33,16 @@ public class    ComparableTreeSet<T> extends TreeSet<T> implements Comparable<T>
 
     @Override
     public String toString() {
-        return "ComparableTreeSet{" +
-                "list=" + Arrays.toString(list) +
-                '}';
+        // sort this then return the sorted version
+        Arrays.sort(list);
+        return  Arrays.toString(list);
+
     }
 
     @Override
     public int compareTo(T o) {
-        return 0;
+        String temp1 = o.toString();
+        String temp2 = Arrays.toString(list);
+        return temp1.compareTo(temp2);
     }
 }

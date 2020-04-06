@@ -22,7 +22,7 @@ public class ZipCodeWilmington {
 
     public void lecture(double numberOfHours) {
         for (Student elem: studyMap.keySet()) {
-            elem.learn(numberOfHours);
+                elem.learn(numberOfHours);
         }
     }
 

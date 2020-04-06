@@ -49,10 +49,12 @@ public class Group<T> implements GroupInterface<T>{
 
     @Override
     public String toString() {
-        StringAssembler assembler = new StringAssembler(' ');
-        for (int i = 0; i < list.size() ; i++) {
-            assembler.append((String) list.get(i));
+        String ans = "[";
+        for (int i = 0; i < list.size()-1; i++) {
+            ans+= list.get(i) + ", ";
         }
-        return assembler.assemble();
+        ans += list.get(list.size()) + "]";
+
+        return ans;
     }
 }
