@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * @author leon on 18/12/2018.
+ * Jeremy McCray's work
  */
 public class Group<T> implements GroupInterface<T>{
 

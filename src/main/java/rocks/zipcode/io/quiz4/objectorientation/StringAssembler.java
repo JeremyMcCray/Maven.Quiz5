@@ -2,6 +2,7 @@ package rocks.zipcode.io.quiz4.objectorientation;
 
 /**
  * @author leon on 11/12/2018.
+ * Jeremy McCray's work
  */
 public class StringAssembler {
     Character delimiter;

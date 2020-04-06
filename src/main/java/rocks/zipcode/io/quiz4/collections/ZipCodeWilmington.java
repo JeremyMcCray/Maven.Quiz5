@@ -6,6 +6,7 @@ import java.util.Map;
 
 /**
  * @author leon on 11/12/2018.
+ * Jeremy McCray's work
  */
 public class ZipCodeWilmington {
 

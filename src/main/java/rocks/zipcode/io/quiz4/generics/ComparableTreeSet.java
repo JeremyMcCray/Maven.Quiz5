@@ -7,6 +7,7 @@ import java.util.TreeSet;
 
 /**
  * @author leon on 11/12/2018.
+ * Jeremy McCray's work
  */
 public class    ComparableTreeSet<T> extends TreeSet<T> implements Comparable<T> {
 

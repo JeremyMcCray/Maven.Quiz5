@@ -4,6 +4,7 @@ import java.util.*;
 
 /**
  * @author leon on 11/12/2018.
+ * Jeremy McCray's work
  */
 public class StringEvaluator {
     public static String[] getAllSubstrings(String string) {

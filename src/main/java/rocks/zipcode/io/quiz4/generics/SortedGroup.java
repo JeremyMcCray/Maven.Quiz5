@@ -6,6 +6,7 @@ import java.util.TreeSet;
 
 /**
  * @author leon on 18/12/2018.
+ * Jeremy McCray's work
  */
 public class SortedGroup<T> extends Group<T> {
 

@@ -6,6 +6,7 @@ import java.util.TreeSet;
 
 /**
  * @author leon on 11/12/2018.
+ * Jeremy McCray's work
  */
 public class GenericUtils {
     public static <T extends Comparable> Iterable<? extends Iterable<T>> powerSet(Set<T> originalSet) {

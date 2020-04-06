@@ -2,6 +2,7 @@ package rocks.zipcode.io.quiz4.generics;
 
 /**
  * @author leon on 18/12/2018.
+ * Jeremy McCray's work
  */
 public interface GroupInterface<T> extends Iterable<T> {
     Integer count();

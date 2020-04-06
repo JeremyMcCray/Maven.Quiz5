@@ -4,6 +4,7 @@ import rocks.zipcode.io.quiz4.fundamentals.StringEvaluator;
 
 /**
  * @author leon on 19/12/2018.
+ * Jeremy McCray's work
  */
 public class StringEvaluatorObject {
 
