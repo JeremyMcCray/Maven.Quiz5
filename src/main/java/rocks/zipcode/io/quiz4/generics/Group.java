@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class Group<T> implements GroupInterface<T>{
 
-    List<T> list;
+    List<T> list = new LinkedList<>();
 
 
     public Group() {
@@ -53,7 +53,7 @@ public class Group<T> implements GroupInterface<T>{
         for (int i = 0; i < list.size()-1; i++) {
             ans+= list.get(i) + ", ";
         }
-        ans += list.get(list.size()) + "]";
+        ans += list.get(list.size()-1) + "]";
 
         return ans;
     }

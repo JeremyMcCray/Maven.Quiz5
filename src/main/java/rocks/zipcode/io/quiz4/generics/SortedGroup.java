@@ -25,4 +25,11 @@ public class SortedGroup<T> extends Group<T> {
         List<T> sett = new ArrayList<>(set);
         return sett.indexOf(value);
     }
+
+    @Override
+    public String toString() {
+        return "SortedGroup{" +
+                "set=" + set +
+                '}';
+    }
 }
