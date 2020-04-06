@@ -1,5 +1,7 @@
 package rocks.zipcode.io.quiz4.generics;
 
+import rocks.zipcode.io.quiz4.objectorientation.StringAssembler;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -42,5 +44,14 @@ public class Group<T> implements GroupInterface<T>{
 
     public Iterator<T> iterator() {
         return list.iterator();
+    }
+
+    @Override
+    public String toString() {
+        StringAssembler assembler = new StringAssembler(' ');
+        for (int i = 0; i < list.size() ; i++) {
+            assembler.append((String) list.get(i));
+        }
+        return assembler.assemble();
     }
 }
